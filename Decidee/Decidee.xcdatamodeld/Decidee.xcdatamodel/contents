@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cons" representedClassName="Cons" syncable="YES" codeGenerationType="class">
+        <attribute name="importance" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="decision" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Decision" inverseName="cons" inverseEntity="Decision"/>
+    </entity>
+    <entity name="Decision" representedClassName="Decision" syncable="YES" codeGenerationType="class">
+        <attribute name="consPercentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="prosPercentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="cons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cons" inverseName="decision" inverseEntity="Cons"/>
+        <relationship name="pros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pros" inverseName="decision" inverseEntity="Pros"/>
+    </entity>
+    <entity name="Pros" representedClassName="Pros" syncable="YES" codeGenerationType="class">
+        <attribute name="importance" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="decision" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Decision" inverseName="pros" inverseEntity="Decision"/>
+    </entity>
+    <elements>
+        <element name="Cons" positionX="-221.38427734375" positionY="114.5115356445312" width="128" height="74"/>
+        <element name="Decision" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Pros" positionX="101.29052734375" positionY="114.0036010742188" width="128" height="74"/>
+    </elements>
 </model>

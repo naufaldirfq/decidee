@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B85D1D6A26430D8800AA92B0 /* DecisionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85D1D6926430D8800AA92B0 /* DecisionTableViewCell.swift */; };
 		B8AF71B526412875009833F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AF71B426412875009833F5 /* AppDelegate.swift */; };
 		B8AF71B726412875009833F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AF71B626412875009833F5 /* SceneDelegate.swift */; };
 		B8AF71B926412875009833F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AF71B826412875009833F5 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		B8AF71BF26412875009833F5 /* Decidee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8AF71BD26412875009833F5 /* Decidee.xcdatamodeld */; };
 		B8AF71C126412876009833F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AF71C026412876009833F5 /* Assets.xcassets */; };
 		B8AF71C426412876009833F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AF71C226412876009833F5 /* LaunchScreen.storyboard */; };
+		B8AF7273264186C7009833F5 /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AF7272264186C7009833F5 /* DecisionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B85D1D6926430D8800AA92B0 /* DecisionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTableViewCell.swift; sourceTree = "<group>"; };
 		B8AF71B126412875009833F5 /* Decidee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decidee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AF71B426412875009833F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AF71B626412875009833F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		B8AF71C026412876009833F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AF71C326412876009833F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AF71C526412876009833F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AF7272264186C7009833F5 /* DecisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		B8AF71B326412875009833F5 /* Decidee */ = {
 			isa = PBXGroup;
 			children = (
+				B8AF71D1264129FE009833F5 /* Model */,
 				B8AF71B426412875009833F5 /* AppDelegate.swift */,
 				B8AF71B626412875009833F5 /* SceneDelegate.swift */,
 				B8AF71B826412875009833F5 /* ViewController.swift */,
+				B85D1D6926430D8800AA92B0 /* DecisionTableViewCell.swift */,
 				B8AF71BA26412875009833F5 /* Main.storyboard */,
 				B8AF71C026412876009833F5 /* Assets.xcassets */,
 				B8AF71C226412876009833F5 /* LaunchScreen.storyboard */,
 				B8AF71C526412876009833F5 /* Info.plist */,
 				B8AF71BD26412875009833F5 /* Decidee.xcdatamodeld */,
+				B8AF7272264186C7009833F5 /* DecisionViewController.swift */,
 			);
 			path = Decidee;
+			sourceTree = "<group>";
+		};
+		B8AF71D1264129FE009833F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8AF71D526412B48009833F5 /* Cons */,
+				B8AF71D426412B43009833F5 /* Pros */,
+				B8AF71D326412B3C009833F5 /* Decision */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8AF71D326412B3C009833F5 /* Decision */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decision;
+			sourceTree = "<group>";
+		};
+		B8AF71D426412B43009833F5 /* Pros */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pros;
+			sourceTree = "<group>";
+		};
+		B8AF71D526412B48009833F5 /* Cons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +181,9 @@
 				B8AF71B926412875009833F5 /* ViewController.swift in Sources */,
 				B8AF71B526412875009833F5 /* AppDelegate.swift in Sources */,
 				B8AF71B726412875009833F5 /* SceneDelegate.swift in Sources */,
+				B8AF7273264186C7009833F5 /* DecisionViewController.swift in Sources */,
 				B8AF71BF26412875009833F5 /* Decidee.xcdatamodeld in Sources */,
+				B85D1D6A26430D8800AA92B0 /* DecisionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
